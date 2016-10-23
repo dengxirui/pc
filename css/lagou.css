@@ -1,0 +1,885 @@
+@charset "utf-8";
+/*规定文件编码*/
+html, body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset ,iframe, legend, label, button, input, textarea, tr, th, td, span, i, b, em, strong, s, u, a{
+    margin: 0;
+    padding: 0;
+}
+body{font: 14px "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;background: #ffffff;color:#333}
+/*margin和padding重置*/
+h1 ,h2 ,h3 ,h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, var ,i, em { font-style: normal;}
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace;}
+small { font-size: 12px;}
+ul, ol { list-style: none;}
+a { text-decoration: none;}
+fieldset, img, button{ border: none;vertical-align: middle;}
+input{vertical-align: middle;}
+button, input, select, textarea {font-size: 100%; outline: none}
+img, iframe, table, form{ vertical-align: top;}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    border: none;
+    height: 1px;
+}
+.clear:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both
+}
+.w1024{
+    min-width: 1024px;
+    width:1024px;
+    padding: 0 160px 0 163px ;
+}
+
+/*以上是全局默认样式清除*/
+/*header start*/
+.header .navTop{
+    width: 100%;
+    height:30px;
+    line-height: 30px;
+    background-color:#333 ;
+}
+.header .navTop i{
+    /*width: 1px;*/
+    /*height: 16px;*/
+    color:#5d5d5d ;
+}
+.header .navTop .left{
+    padding-left:20px ;
+   float: left;
+}
+.header .navTop a{
+    padding:0 8px ;
+    color:#c4c3c3;
+}
+.header .navTop a:hover{
+    color: #FFFFFF;
+}
+.header .navTop .left .app{
+    background: url("../images/app_icon.png")no-repeat 10px 0;
+    padding: 0 12px 0 27px;
+    color:#00b38a ;
+}
+.header .navTop .left .app:hover{
+    color:#08d7a2 ;
+}
+.header .navTop .right{
+    float: right;
+    padding-right: 27px;
+}
+.header .nav{
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    height:54px;
+    line-height: 54px;
+    background-color: #fafafa;
+}
+.nav h1{
+    float: left;
+    margin: 10px 0;
+}
+.nav h1 a{
+    display: block;
+    width: 97px;
+    height: 34px;
+    background: url("../images/logo.png")no-repeat ;
+}
+.w1024 .city{
+    float: left;
+    padding-top: 10px;
+    padding-left: 12px;
+    height: 44px;
+    line-height: 44px;
+}
+.w1024 .city i{
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.w1024 .city a{
+    color: #999;
+    font-size: 12px;
+}
+.w1024 .list{
+    float: left;
+}
+.w1024 .list li{
+    float: left;
+    margin-left: 46px;
+    width:46px;
+    height:52px;
+    line-height: 52px;
+    text-align: center;
+}
+.w1024 .list li a{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+}
+.w1024 .list .index,.w1024 .list li:hover{
+    border-bottom: 2px solid #00b38a;
+}
+.w1024 .list li .index_a,.w1024 .list li:hover a{
+    color: #333;
+}
+.w1024 .list .yz{
+    position: relative;
+}
+.w1024 .list .yz i{
+    display: block;
+    position: absolute;
+    right: -25px;
+    top:5px;
+    width: 28px;
+    height: 16px;
+    background: url("../images/icon-new.png");
+}
+/*header end*/
+/*content-left start*/
+.content{
+    margin-top: 35px;
+    clear: both;
+}
+.content .left{
+    float: left;
+    /*padding: 10px 0;*/
+    width:230px ;
+    height:820px ;
+    background-color:#fafafa ;
+}
+.content .left .menu{
+    overflow: hidden;
+    border: 2px solid #fafafa;
+    border-right: 0;
+    padding: 6px 12px;
+}
+.content .left .menu .dis{
+    margin-bottom: 0;
+}
+.content .left{
+    position: relative;
+}
+.content .left .menu h2{
+    font-size: 18px;
+    padding:10px 0 0 8px;
+    font-weight: 500;
+}
+.content .left .menu h2.finance{
+    position: relative;
+}
+.content .left .menu h2 i.fina{
+    display:block;
+    background: url(../images/newLabel.png) 0 0 no-repeat;
+    position: absolute;
+    left: 48px;
+    top: 9px;
+    width: 37px;
+    height: 17px;
+
+}
+.content .left .menu h2 span{
+    float: right;
+    width: 13px;
+    height: 14px;
+    background: url(../images/arr.png) 0 0 no-repeat;
+    margin-top: 4px;
+}
+.content .left .menu a{
+    float: left;
+    white-space: nowrap;
+    margin: 0 5px 5px 0;
+    padding: 5px 8px;
+    color: #555;
+}
+.content .left .menu_hidden{
+    display: none;
+    position: absolute;
+    left:230px ;
+    border: 2px solid #c9cbce;
+    padding: 5px 30px 5px;
+    width: 540px;
+    z-index: 10;
+    background: #fff;
+}
+.content .left .menu_hidden dl{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.content .left .menu_hidden dl dt{
+    position: absolute;
+    width: 70px;
+    font-size: 14px;
+    text-align: right;
+}
+.content .left .menu_hidden dl dt a{padding: 0;
+    color: #333;
+    line-height: 28px;
+    text-decoration: underline;
+}
+.content .left .menu_hidden dl dd{
+    overflow: hidden;
+    margin-left: 100px;
+}
+.content .left .menu_hidden dl dd a{
+    white-space: nowrap;
+    margin-left: -1px;
+    padding: 0 10px;
+    background: url(../images/arr.png) -29px center no-repeat;
+    color: #777;
+    line-height: 28px;
+
+}
+.content .left .menu_hidden dl dd .cur{
+    color: #00b38a;
+}
+.content .left .wrap:hover .menu{
+    position: relative;
+    border: 2px solid #c9cbce;
+    border-right: 0;
+    background-color: #fff;
+    z-index: 20;
+}
+.content .left .wrap:hover .menu_hidden{
+    display: block;
+    left:228px ;
+}
+.content .left .wrap a:hover{
+    color: #00b38a;
+    text-decoration: underline
+}
+.content .left .subscribe{
+    border-bottom: 2px solid #00b38a;
+    margin-top: 12px;
+    padding-left:20px;
+    width: 210px;
+    height: 46px;
+    line-height: 46px;
+    background: #fafafa;
+    font-size: 18px;
+}
+.content .left .subscribe a{
+    display:block;
+    width: 210px;
+    height: 46px;
+}
+.content .left .subscribe a:hover span{
+     color: #00b38a; ;
+}
+.content .left .subscribe a span{
+    margin-left: 20px;
+    color: #555;
+}
+.content .left .subscribe a i{
+    display:inline-block;
+    margin-left: 70px;
+    margin-top: 14px;
+    width: 21px;
+    height: 21px;
+    background: url(../images/arr_btn.png)  0 -19px no-repeat;
+}
+/*content-left end*/
+/*content-right start*/
+.content .right{
+    float: right;
+}
+/*搜索框开始*/
+.content .right .search-box{
+    position: relative;
+    width: 740px;
+    height: 37px;
+}
+.content .right .search-box input[type=text]{
+    float: left;
+    border: 2px solid #00b38a;
+    border-right: 0;
+    padding: 5px 8px 5px 10px;
+    width: 570px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 16px;
+    color: #999;
+}
+.content .right .search-box input[type=submit]{
+    float: right;
+    border: 2px solid #00b38a;
+    width: 150px;
+    height: 37px;
+    color: #FFF;
+    font-size: 18px;
+    background: #00b38a;
+    cursor: pointer;
+}
+/*搜索框结束*/
+/*热门搜索开始*/
+.content .right .hostSearch{
+    /*display: block;*/
+    /*-webkit-margin-before: 1em;*/
+    /*-webkit-margin-after: 1em;*/
+    /*-webkit-margin-start: 0px;*/
+    /*-webkit-margin-end: 0px;*/
+    padding: 10px 0 20px 0;
+}
+.content .right .hostSearch dt{
+    float: left;
+    width: 70px;
+}
+.content .right .hostSearch dd{
+    float:left ;
+    margin-right: 20px;
+}
+.content .right .hostSearch dd a{
+    color: #00b38a;
+}
+.content .right .hostSearch dd a:hover{
+    text-decoration: underline;
+}
+
+/*热门搜索结束*/
+/*轮播图开始*/
+.content .right .banner{
+    /*overflow: hidden;*/
+    position: relative;
+    margin: 20px 0 18px;
+    width: 744px;
+    height: 160px;
+}
+.content .right .banner .banner_bg {
+    overflow: hidden;
+    float: left;
+    width: 612px;
+    height: 160px;
+    position: relative;
+    left: 0;
+}
+.content .right .banner .banner_control{
+    float: right;
+    width: 121px;
+    height: 160px;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.content .right .banner .banner_control em{
+    position: absolute;
+    width: 127px;
+    height: 50px;
+    background: url(../images/control_current.png) 0 0 no-repeat;
+    z-index: 30;
+    top: 0;
+    left: -6px;
+    /*display: none;*/
+}
+.content .right .banner .banner_control div{
+    margin-bottom: 5px;
+    width: 113px;
+    height: 42px;
+    border: 4px solid #d3d3d3;
+    position: relative;
+}
+.content .right .banner .banner_control div i{
+    background: url(../images/cover.png) no-repeat;
+    width: 113px;
+    height: 42px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.content .right .banner .banner_control div img{
+    width: 113px;
+    height: 42px;
+}
+/*轮播图结束*/
+/*穿墙效果图开始*/
+.content .right .imgList{
+    /*position: relative;*/
+    /*width: 744px;*/
+    height: 118px;
+    margin-bottom: 25px;
+}
+.content .right .imgList li{
+    /*position: relative;*/
+    float: left;
+    border: 2px solid #fafafa;
+    width: 113px;
+    height: 113px;
+    margin-right:8px ;
+    /*margin: 0 8px 0 0;*/
+    background: #fff;
+}
+.content .right .imgList a{
+    color: #fff;
+    overflow: hidden;
+}
+.content .right .imgList a img{
+    width: 113px;
+    height: 113px;
+    border: none;
+}
+.content .right .imgList a div{
+    display: none;
+    position: absolute;
+    /*background: rgba(0,179,138,.9);*/
+    background: #00b38a;
+    filter: alpha(opacity=90);
+    width: 113px;
+    height: 113px;
+}
+.content .right .imgList a div h2{
+    overflow: hidden;
+    margin: 10px 8px 8px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.content .right .imgList a div em{
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: rgba(255,255,255,.3);
+    /*background: #fff;*/
+    /*filter: alpha(opacity=30);*/
+    margin: 0 6px;
+}
+.content .right .imgList a div p{
+    font-size: 12px;
+    margin: 6px 8px;
+    line-height: 18px;
+}
+/*穿墙效果图结束*/
+/*职位列表开始*/
+.content .right .job_tab{
+    width: 744px;
+    height: 39px;
+    line-height: 39px;
+    background: #f6f6f6;
+}
+.content .right .job_tab li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+}
+.content .right .job_tab li.cur{
+    border-top: 3px solid #00b38a;
+    background: #fff;
+    color: #333;
+}
+/*职位列表结束*/
+/*招聘详细信息开始*/
+.content .right .recruitment{
+    width: 744px;
+    /*height: 100%;*/
+    height: 1917px;
+}
+.recruitment .rec_info{
+    overflow: hidden;
+    border-bottom: 1px dashed #e1e1e1;
+    width: 744px;
+    height: 123px;
+}
+.info_top{
+    overflow: hidden;
+    padding-top: 22px;
+    padding-left: 15px;
+    height: 62px;
+    background-color: #fff;
+}
+.top_l{
+    float: left;
+    width: 400px;
+    margin-right: 20px;
+}
+.top_l .position_name{
+    height: 34px;
+}
+.top_l .position_name h2{
+    display: inline-block;
+    font-weight: 500;
+}
+.top_l .position_name h2 a{
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    max-width: 256px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.top_l .position_name h2 a,.top_l .position_name h2 a span{
+    font-size: 16px;
+    color: #00b38a;
+}
+.top_l .position_name span{
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #999;
+    font-size: 14px;
+
+}
+.top_l .salary span{
+    font-size: 14px;
+    color: #333;
+}
+.top_l .salary .money{
+    margin-right: 20px;
+    font-size: 16px;
+    color: #fa6041;
+}
+.top_r{
+    float: right;
+    width: 309px;
+}
+.top_r .e a{
+    display: block;
+    width: 294px;
+    height: 34px;
+    font-size: 16px;
+    color: #00b38a;
+}
+.info_btm{
+    height: 39px;
+    background-color: #fafafa;
+}
+.info_btm .btn_l{
+    float: left;
+    width: 400px;
+    height: 39px;
+    line-height: 39px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.info_btm .btn_r{
+    float: left;
+    width: 309px;
+    height: 24px;
+    padding-top: 8px;
+    overflow: hidden;
+}
+.info_btm .btn_r span{
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    margin-right: 10px;
+    padding: 0 3px;
+    height: 22px;
+    line-height: 22px;
+}
+.recruitment a.more_btn{
+    float: right;
+    margin-top: 25px;
+    padding: 5px 40px 5px 15px;
+    font-size: 16px;
+    color: #fff;
+    background: #00b38a url(../images/arrow.png) 88px center no-repeat;
+}
+
+/*招聘详细信息结束*/
+/*友情链接开始*/
+.right .linkBox{
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #ececed;
+    margin-top: 40px;
+   padding-top:15px ;
+    width: 744px;
+    height: 31px;
+}
+.right .linkBox dl{
+    float: left;
+}
+.right .linkBox dt{
+    float: left;
+    width: 70px;
+    /*margin-top: 2px;*/
+    font-size: 15px;
+}
+.linkBox dl dd{
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.linkBox dl dd a{
+    display:inline-block;
+    white-space: nowrap;
+    padding: 3px 5px 0 5px;
+    /*height: 16px;*/
+    font-size: 12px;
+    /*line-height: 16px;*/
+    color: #555;
+}
+.linkBox dl dd a:hover,.linkBox .open{
+    color: #00b38a;
+    text-decoration:underline ;
+}
+.linkBox .open{
+    position: relative;
+    float: right;
+    padding-top: 4px;
+    font-size: 12px;
+    color: #555;
+}
+.linkBox .open i{
+    display: inline-block;
+    margin-left: 2px;
+    background: url("../images/down.png")0 0 no-repeat;
+    width: 12px;
+    height: 7px;
+}
+
+/*友情链接结束*/
+
+/*回到顶部开始*/
+.backTop{
+    /*display: none;*/
+    position: fixed;
+    left: 50%;
+    bottom: 140px;
+    background: url(../images/backtop.png) 0 0 no-repeat;
+    margin-left: 548px;
+    width: 28px;
+    height: 64px;
+}
+.backTop:hover{
+    background-position: -28px  0;
+}
+
+/*回到顶部结束*/
+/*我要反馈开始*/
+.feedback{
+    position: fixed;
+    left: 50%;
+    bottom: 80px;
+    margin-left: 538px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 30;
+}
+.feedback i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url(../images/feedback.png) 0 0 no-repeat;
+}
+.feedback i:hover{
+    background-position:0 -31px ;
+
+}
+.feedback span{
+    font-size: 12px;
+    color: #555;
+}
+/*我要反馈结束*/
+/*底部开始*/
+.footer{
+    display: none;
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    clear: both;
+    height: 67px;
+    z-index: 100;
+}
+.w1024 .footer_icon{
+    display: block;
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    width: 198px;
+    height: 19px;
+    background: url(../images/footer.png) 0 0 no-repeat;
+}
+.w1024 .inner{
+    float: right;
+    padding-top: 12px;
+    height: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+}
+.w1024 .inner a{
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    color: #555;
+    font-size: 14px;
+}
+.w1024 .inner a.app span{
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: -2px;
+    background: url(../images/new_app.png) no-repeat;
+    margin-left: 13px;
+    width: 30px;
+    height: 16px;
+    vertical-align: text-top;
+    overflow: hidden;
+    text-indent: -99em;
+}
+.w1024 .inner a.app img,.w1024 .inner a.wx img{
+    display: none;
+    position: absolute;
+    left:0;
+    bottom:20px;
+    border: 3px solid #0D9572;
+   opacity: 1;
+    z-index: 100;
+}
+.w1024 .inner a.app:hover img,.w1024 .inner a.wx:hover img{
+    display: block;
+}
+.w1024 .inner a.app img{
+    width: 256px;
+    height: 256px;
+}
+.w1024 .inner a.wx img{
+    width:242px ;
+    height: 242px;
+}
+.w1024 .copyright{
+    margin: 0 auto;
+    padding: 20px 0 14px 0;
+    clear: both;
+    height: 12px;
+    line-height: 12px;
+    color: #d5d5d5;
+    font-size: 12px;
+    text-align: center;
+}
+.w1024 .copyright a{
+    font-size: 12px;
+    color: #d5d5d5;
+}
+.w1024 .copyright a.icon{
+    display: inline-block;
+    border: 0;
+    margin-top: -8px;
+    vertical-align: top;
+
+}
+
+/*底部结束*/
+/*登录条开始*/
+.loginBox{
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    background: url(../images/footerbar_repeat.png) repeat-x;
+}
+.loginBox .position{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.loginBox .position em{
+    background: url(../images/footbar_img.png) no-repeat;
+    position: absolute;
+    top: -54px;
+    left: -110px;
+    width: 95px;
+    height: 54px;
+}
+
+.loginBox .position img{
+    position: absolute;
+    left: -110px;
+    top: 10px;
+}
+.loginBox .position span{
+    display: inline-block;
+    /*font-weight: 100;*/
+    font-size: 32px;
+    line-height: 38px;
+    color: #dafaf4;
+    padding-right: 33px;
+    height: 30px;
+    background: url(../images/footbar_text.png) right 16px no-repeat;
+}
+.loginBox .position span.companyCount{
+    margin: 20px 0 0 294px;
+
+}
+.loginBox .position span.positionCount{
+   background-position: right bottom;
+    margin: 20px 0 0 60px;
+}
+.loginBox .position span i{
+    /*display: inline-block;*/
+    float: right;
+    width: 20px;
+    height: 30px;
+    background: url(../images/footbar_no.png) 0 0 no-repeat;
+
+}
+.loginBox .position span b{
+    /*display: inline-block;*/
+    float: right;
+    width: 9px;
+    height: 30px;
+    background: url(../images/footbar_comma.png) center bottom no-repeat;
+}
+.loginBox .position .login{
+    height: 64px;
+    position: absolute;
+    left: 790px;
+    background: url(../images/footbar_btn_green.png) repeat-x;
+    padding: 0 46px;
+    /*z-index: 20;*/
+}
+.loginBox .position .login:hover{
+    background: url(../images/footbar_btn_green_hover.png) repeat-x;
+}
+.loginBox .position .login i{
+    display: block;
+    width: 50px;
+    height: 64px;
+    background: url(../images/footbar_login.png) left center no-repeat;
+}
+.loginBox .position .quickLogin{
+    position: absolute;
+    left: 932px;
+    top: 0;
+    height: 64px;
+    background: url(../images/footbar_btn_red.png) repeat-x;
+}
+.loginBox .position .quickLogin a{
+    display: inline-block;
+    height: 64px;
+    padding: 0 46px;
+    margin-right: 30px;
+
+}
+.loginBox .position .quickLogin a:hover{
+    background: url(../images/footbar_btn_red_hover.png)repeat-x;
+
+}
+
+.loginBox .position .quickLogin a i{
+    display: block;
+    width: 120px;
+    height: 64px;
+    background: url(../images/footbar_register.png) left center no-repeat;
+
+}
+
+
+
+
+
+/*登录条结束*/
